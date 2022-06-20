@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-seri;
+    background-color: #fff;
+    height: 100vh;
+    
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    box-shadow: 3px 3px 5px #000;
+}
+
+.headers{
+    display: flex;
+    border-radius: 30px 30px 0 0;
+}
+
+.profile-pics{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.btns{
+    background-color: mintcream;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input{
+    padding:5px;
+    border-radius: 3px;
+    border: 0;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid greenyellow;
+}
+
+.menu-items li{
+    display: inline-block;
+    padding: 0 30px;
+    margin-top: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    
+    transition: all 0.5s;
+}
+
+li:hover{
+    color: yellow;
+    transform: scale(1.05);
+}
+
+.body-containers{
+    /* background-image: url(../img/electrician3.jpg); */
+}
+
+.welcomes{
+    font-size: 30px;
+    color: indigo;
+}
+
+span.mottos{
+    font-size: 20px;
+    margin-left: 14px;
+    padding: 5px 10px;
+
+    animation: mottoeff 2s linear forwards
+}
+
+@keyframes mottoeff{
+    0%{
+        box-shadow: 0 0 0 #000;
+        transform: scale(1);
+    }
+    100%{
+    box-shadow: 3px 5px 5px #000;
+        transform: scale(1.023);
+    }
+}
+
+.img-container1s{
+    background-image: url(../img/electrician3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+.sticks{
+    display: inline-block;
+    height: 40px;
+    width: 8px;
+    background-color: goldenrod;
+
+    padding-bottom: 40px;
+}
+
+
+.text1s{
+    text-transform: capitalize;
+}
+
+.text2s{
+    font-size: 30px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    animation: mottoeff2 2s linear forwards;
+}
+
+@keyframes mottoeff2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        text-shadow: 1px 2px 2px goldenrod;
+    }
+}
+
+.learnmores:hover, .services:hover{
+    text-decoration: underline;
+}
+
+.contact-containers{
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: none;
+}
+
+.contact-containers.active{
+    display: block;
+    /* transition: all 2s; */
+}
+
+.contacts{
+    width: 400px;
+    background-color:coral;
+    border-radius: 20px;
+    
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.4);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.names, .ph-numbers, .locations,.causes{
+    font-size: 20px;
+}
+
+.form-input:focus{
+    border: 1px solid #000;
+}
+
+.close-btn{
+    background: transparent;
+    border: none;
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.close-btn:hover{
+    background-color:#000;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.contact-headers{
+    background-color: blanchedalmond;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+}
+
+.location-btns{
+    padding: 5px;
+    background-color:royalblue;
+    color: #fff;
+}
+
+.contact-contents{
+    padding: 10px;
+}
+
+.contact-form .form-group{
+    margin: 10px 0;
+}
+
+.contact-form label{
+    display: block;
+}
+
+.form-group .radio-label{
+    display: inline;
+}
+
+.submit-btns{
+    width: 100%;
+}
+
+
+
+
+
+
